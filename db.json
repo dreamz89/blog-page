@@ -1,16 +1,68 @@
 {
   "posts": [
     {
-      "userId": 1,
       "id": 1,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "author": "Diana Barry",
+      "date": "2014-06-12",
+      "topic": "asia",
+      "title": "Walk the Great Wall of China",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "userId": 1,
       "id": 2,
-      "title": "qui est esse",
-      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+      "author": "James Blythe",
+      "date": "2020-06-12",
+      "topic": "africa",
+      "title": "Go on a Safari",
+      "body": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 3,
+      "author": "John Meredith",
+      "date": "2022-05-12",
+      "topic": "europe",
+      "title": "Explore the Old Town",
+      "body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "id": 4,
+      "author": "Kenneth Ford",
+      "date": "2023-01-10",
+      "topic": "asia",
+      "title": "Spend the day at the beach",
+      "body": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 5,
+      "author": "Anne Shirley",
+      "date": "2022-01-10",
+      "topic": "europe",
+      "title": "Binge on Pizza and Pasta",
+      "body": "Et harum quidem rerum facilis est et expedita distinctio."
+    },
+    {
+      "id": 6,
+      "author": "Faith Meredith",
+      "date": "2022-12-10",
+      "topic": "africa",
+      "title": "Meet the Villagers of a Tribe",
+      "body": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
+    },
+    {
+      "id": 7,
+      "author": "Diana Barry",
+      "date": "2019-06-12",
+      "topic": "europe",
+      "title": "Visit a Baroque Palace",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 8,
+      "author": "Rosemary West",
+      "date": "2020-05-10",
+      "topic": "asia",
+      "title": "Play Pachinko in Japan",
+      "body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
   ]
 }
