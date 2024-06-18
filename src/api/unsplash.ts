@@ -1,7 +1,7 @@
 const BASE_URL = "https://api.unsplash.com"
 
 const getPhoto = async (query: string) => {
-  const url = `${BASE_URL}/search/photos?per_page=1&query=${query}`
+  const url = `${BASE_URL}/search/photos?per_page=1&orientation=landscape&query=${query}`
   
   try {
     const response = await fetch(url, {
