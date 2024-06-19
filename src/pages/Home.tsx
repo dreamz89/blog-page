@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import getPosts from "api/localdata"
 import getPhoto from "api/unsplash"
+import PostTeaser from "components/PostTeaser"
 import { device } from "styles/breakpoints"
 import { PostType } from "types/post"
 
@@ -20,14 +21,20 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+  margin-bottom: 16px;
 
   @media ${device.sm} {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
   }
 
   @media ${device.lg} {
     grid-template-columns: repeat(3, 1fr);
   }
+`
+
+const StyledParagraph = styled(Paragraph)`
+  font-size: ${(props) => props.theme.antd.fontSizeLG}px;
 `
 
 const Home = () => {
@@ -57,9 +64,12 @@ const Home = () => {
     <Page>
       <div>
         <Title>Blog</Title>
-        <Paragraph>Follow me on my journey around the world</Paragraph>
+        <StyledParagraph>Follow me on my journey around the world</StyledParagraph>
       </div>
       <Grid>
+        {postsData?.map((post) => (
+          <PostTeaser details={post} />
+        ))}
       </Grid>
     </Page>
   )
