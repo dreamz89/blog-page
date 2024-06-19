@@ -17,6 +17,10 @@ const Page = styled.div`
   padding: 32px 0;
 `
 
+const StyledParagraph = styled(Paragraph)`
+  font-size: ${(props) => props.theme.antd.fontSizeLG}px;
+`
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -31,10 +35,6 @@ const Grid = styled.div`
   @media ${device.lg} {
     grid-template-columns: repeat(3, 1fr);
   }
-`
-
-const StyledParagraph = styled(Paragraph)`
-  font-size: ${(props) => props.theme.antd.fontSizeLG}px;
 `
 
 const Home = () => {
@@ -68,7 +68,7 @@ const Home = () => {
       </div>
       <Grid>
         {postsData?.map((post) => (
-          <PostTeaser details={post} />
+          <PostTeaser key={post.id} details={post} />
         ))}
       </Grid>
     </Page>

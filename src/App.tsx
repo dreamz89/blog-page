@@ -1,12 +1,10 @@
 import { Outlet } from "react-router-dom"
 import { ConfigProvider, Layout } from "antd"
 
-import Navigation from "./components/Navigation"
-import AntTheme from "./styles/ant-theme"
-import CombinedThemeProvider from "./styles/combined-theme"
-import { GlobalStyle, Container } from "./styles/global"
-
-const { Content } = Layout
+import Navigation from "components/Navigation"
+import AntTheme from "styles/ant-theme"
+import CombinedThemeProvider from "styles/combined-theme"
+import { GlobalStyle, Container } from "styles/global"
 
 function App() {
   return (
@@ -15,11 +13,11 @@ function App() {
         <GlobalStyle />
         <Layout>
           <Navigation />
-          <Content>
+          <Layout.Content>
             <Container>
               <Outlet />
             </Container>
-          </Content>
+          </Layout.Content>
         </Layout>
       </CombinedThemeProvider>
     </ConfigProvider>

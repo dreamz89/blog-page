@@ -4,9 +4,7 @@ import styled from "styled-components"
 import { Container } from "styles/global"
 import logo from "logo.svg"
 
-const { Header } = Layout
-
-const Nav = styled(Header)`
+const Nav = styled(Layout.Header)`
   div {
     display: flex;
     align-items: center;
