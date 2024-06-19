@@ -15,7 +15,7 @@ const getPhoto = async (query: string) => {
 
     const photo = await response.json()
 
-    return photo.results[0].urls.regular
+    return photo.results[0].urls.raw + "&w=600&dpr=2"
 
   } catch (error) {
     console.error(error)
