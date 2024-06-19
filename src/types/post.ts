@@ -4,6 +4,6 @@ export type PostType = {
   date: string,
   topic: string,
   title: string,
-  body: string
+  description: string
   photoUrl?: string
 }
